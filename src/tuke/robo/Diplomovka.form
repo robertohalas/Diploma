@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="tuke.robo.Diplomovka">
+  <grid id="27dc6" binding="panelMain" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="671" height="820"/>
+    </constraints>
+    <properties>
+      <visible value="true"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="28ff0" binding="tabbedPane1" default-binding="true">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <autoscrolls value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="8ebd4" layout-manager="GridBagLayout">
+            <constraints>
+              <tabbedpane title="Možná a univerzálna X-robustnosť"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="f2655" class="javax.swing.JLabel" binding="results2">
+                <constraints>
+                  <grid row="12" column="2" row-span="6" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="20" bottom="20" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Výsledky pre výpočet univerzálnej X-robustnosti:"/>
+                </properties>
+              </component>
+              <component id="aceb2" class="javax.swing.JLabel" binding="results">
+                <constraints>
+                  <grid row="13" column="0" row-span="4" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="20" bottom="20" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Výsledky pre výpočet možnej X-robustnosti:"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <scrollpane id="9c708">
+                <constraints>
+                  <grid row="18" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="20" bottom="20" right="20" weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="46a90" class="javax.swing.JTable" binding="table1" default-binding="true">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="98cd6">
+                <constraints>
+                  <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="453" height="161"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="20" right="0" weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="60cc3" class="javax.swing.JTable" binding="table5" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <enabled value="false"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="12c89" class="javax.swing.JLabel" binding="nazov">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="20" left="20" bottom="0" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Výpočet možnej a univerzálnej X-robustnosti"/>
+                </properties>
+              </component>
+              <component id="7f8e0" class="javax.swing.JSeparator">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="20" bottom="20" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="f2750" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="16"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="0" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Rozmer matice:"/>
+                </properties>
+              </component>
+              <component id="e7575" class="javax.swing.JFormattedTextField" binding="formattedTextField1" default-binding="true">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="40" height="20"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="20" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <preferredSize width="50" height="20"/>
+                  <text value="1"/>
+                </properties>
+              </component>
+              <component id="4902d" class="javax.swing.JLabel" binding="maticaAHorneLabel">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="16"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="0" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Dolný interval matice A:"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="f65e2" class="javax.swing.JTable" binding="matrixLower">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="1"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="20" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <autoCreateRowSorter value="true"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="fcd3f" class="javax.swing.JLabel" binding="maticaADolneLabel">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="16"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="0" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Horný interval matice A:"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="74827" class="javax.swing.JTable" binding="matrixUpper">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="1"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="20" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <autoCreateRowSorter value="true"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="3dbc2" class="javax.swing.JButton" binding="vypocitajButton" default-binding="true">
+                <constraints>
+                  <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="32"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="50" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <label value="Výpočet"/>
+                  <preferredSize width="200" height="32"/>
+                  <text value="Výpočet"/>
+                </properties>
+              </component>
+              <component id="132fd" class="javax.swing.JLabel" binding="vstup">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="20" bottom="0" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Vstupné údaje"/>
+                </properties>
+              </component>
+              <component id="ed896" class="javax.swing.JSeparator">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="20" bottom="20" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <preferredSize width="50" height="2"/>
+                </properties>
+              </component>
+              <component id="aa435" class="javax.swing.JTable" binding="vectorLower">
+                <constraints>
+                  <grid row="3" column="2" row-span="2" col-span="1" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="1"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="20" right="20" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="c6c9b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="20" bottom="0" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Horný interval vektora X:"/>
+                </properties>
+              </component>
+              <component id="5fc77" class="javax.swing.JTable" binding="vectorUpper">
+                <constraints>
+                  <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="1"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="0" right="20" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="8db0a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="20" bottom="0" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Dolný interval vektora X:"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="58ec5" layout-manager="GridBagLayout">
+            <constraints>
+              <tabbedpane title="Testovanie dosiahnuteľnosti pre binárnu cirkulantnú maticu"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="afa86" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="16"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="0" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Cirkulantná matica A:"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="f6f9e" class="javax.swing.JTable" binding="acirk">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="1"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="20" right="20" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <autoCreateRowSorter value="true"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="20d13" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="16"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="0" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Cirkulantná matica B:"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="efcf2" class="javax.swing.JTable" binding="bcirk">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="1"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="20" right="20" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <autoCreateRowSorter value="true"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="8eaf1" class="javax.swing.JButton" binding="binarnyVypocetButton" default-binding="true">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="32"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="50" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <preferredSize width="200" height="32"/>
+                  <text value="Výpočet"/>
+                </properties>
+              </component>
+              <component id="e911c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="16"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="0" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Rozmer matice:"/>
+                </properties>
+              </component>
+              <component id="6cc93" class="javax.swing.JFormattedTextField" binding="formattedTextField2">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="20"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="20" right="20" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="6d969" class="javax.swing.JLabel" binding="cirkul">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="20" left="20" bottom="0" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Výpočet vektora x vyhovujúci rovnici A ⊗ x = B ⊗ x pre binárne cirkulantné matice"/>
+                </properties>
+              </component>
+              <component id="e31bb" class="javax.swing.JLabel" binding="vstup2">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="20" left="20" bottom="0" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Vstupné údaje"/>
+                </properties>
+              </component>
+              <component id="52b42" class="javax.swing.JSeparator">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="20" bottom="0" right="20" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="63508" class="javax.swing.JSeparator">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="20" bottom="20" right="20" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="963c6" class="javax.swing.JLabel" binding="results3">
+                <constraints>
+                  <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="20" bottom="0" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Výsledky pre výpočet vektora x:"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <scrollpane id="ab8e">
+                <constraints>
+                  <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag top="20" left="20" bottom="20" right="20" weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="ec070" class="javax.swing.JTable" binding="table2">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+          <grid id="94401" layout-manager="GridBagLayout">
+            <constraints>
+              <tabbedpane title="Riešenie dvojstranných systémov aplikovaním na max-plus algebru"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="4600d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="16"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="0" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Rozmer matice:"/>
+                </properties>
+              </component>
+              <component id="d9509" class="javax.swing.JTable" binding="matrixA">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="1"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="20" right="20" weightx="0.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <autoCreateRowSorter value="true"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="8cd88" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="16"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="0" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Matica B:"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="826db" class="javax.swing.JTable" binding="matrixB">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="1"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="20" right="20" weightx="0.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <autoCreateRowSorter value="true"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="3459" class="javax.swing.JButton" binding="vypocitajButton2">
+                <constraints>
+                  <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="32"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="50" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <preferredSize width="200" height="32"/>
+                  <text value="Výpočet"/>
+                </properties>
+              </component>
+              <component id="fb877" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="16"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="0" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Horný interval vektora X:"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="497c2" class="javax.swing.JTable" binding="vektorX">
+                <constraints>
+                  <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="1"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="20" right="20" weightx="0.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <autoCreateRowSorter value="true"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="e58c0" class="javax.swing.JLabel" binding="cirkul2">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="20" left="20" bottom="0" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Výpočet vektora x vyhovujúci rovnici A ⊗ x = B ⊗ x pre všeobecné binárne matice"/>
+                </properties>
+              </component>
+              <component id="858dd" class="javax.swing.JSeparator">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="20" bottom="20" right="20" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="f38a6" class="javax.swing.JLabel" binding="vstup3">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="20" bottom="0" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Vstupné údaje"/>
+                </properties>
+              </component>
+              <component id="95fe" class="javax.swing.JSeparator">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="20" bottom="20" right="20" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties/>
+              </component>
+              <scrollpane id="b9748">
+                <constraints>
+                  <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="20" bottom="20" right="20" weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="96a7" class="javax.swing.JTable" binding="table3">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="38885" class="javax.swing.JFormattedTextField" binding="formattedTextField3">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="20"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="20" right="20" weightx="0.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="50bf6" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="16"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="0" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Matica A:"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="ab2b0" class="javax.swing.JLabel" binding="results4">
+                <constraints>
+                  <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="20" bottom="20" right="0" weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Výsledky pre výpočet vektora x aplikovaním na max-plus agebru:"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="88cfd" class="javax.swing.JTable" binding="vektorX2">
+                <constraints>
+                  <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="1"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="20" right="20" weightx="0.0" weighty="1.0"/>
+                </constraints>
+                <properties>
+                  <autoCreateRowSorter value="true"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="c630a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="12" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="237" height="16"/>
+                  </grid>
+                  <gridbag top="0" left="20" bottom="0" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Dolný interval vektora X:"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
